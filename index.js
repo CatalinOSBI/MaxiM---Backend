@@ -1,4 +1,4 @@
-require('dotenv').config({ path: __dirname + '/../.env.local' });
+require('dotenv').config({ path: __dirname + '/.env.local' });
 
 const express = require('express')
 const mysql = require('mysql2')
