@@ -1,17 +1,15 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server/index.js",
-      "use": "@vercel/node"
-    }
+   {
+       "src": "./index.js",
+       "use": "@vercel/node"
+   }
   ],
   "routes": [
-    { "src": "/sneakers", "dest": "/server/api/index.js" },
-    { "src": "/sneakers/:id", "dest": "/server/api/index.js" },
-    { "src": "/sneakers/filter", "dest": "/server/api/index.js" },
-    { "src": "/sneakers3/column/:columnName", "dest": "/server/api/index.js" },
-    { "src": "/create-checkout-session", "dest": "/server/api/index.js" },
-    { "src": "/(.*)", "dest": "/server/api/index.js" }
+   {
+       "src": "/(.*)",
+       "dest": "/"
+   }
   ]
 }
