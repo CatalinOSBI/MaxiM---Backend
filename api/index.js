@@ -12,7 +12,7 @@ const fs = require('fs');
 app.use(cors());
 app.use(express.json())
 app.use(bodyParser.json());
-//-----------------ESTABLISHING THE CONNEXION------------------//
+//-----------------ESTABLISHING THE CONNEXION-----------------//
 const DB = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER ,
