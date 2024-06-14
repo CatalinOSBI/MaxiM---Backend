@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 require('dotenv').config({ path: __dirname + '/.env.local' });
 
