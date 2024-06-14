@@ -29,6 +29,11 @@ app.listen(port, () =>{
     console.log(`App listening on ports ${port}...`);
 });
 
+//test app
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
 //-----------------ERROR CATCHING-----------------//
 DB.connect(function(err) {
     if (err) {
