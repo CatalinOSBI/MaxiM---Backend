@@ -1,5 +1,4 @@
-
-require('dotenv').config({ path: __dirname + '/.env.local' });
+require('dotenv').config({ path: __dirname + '/../.env.local' });
 
 const express = require('express')
 const mysql = require('mysql2')
@@ -28,11 +27,6 @@ const DB = mysql.createConnection({
 app.listen(port, () =>{
     console.log(`App listening on ports ${port}...`);
 });
-
-//test app
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
 
 //-----------------ERROR CATCHING-----------------//
 DB.connect(function(err) {
