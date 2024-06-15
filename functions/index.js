@@ -6,7 +6,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-
+const port = 1818
 const app = express();
 
 app.use(cors());
@@ -27,6 +27,10 @@ const DB = mysql.createConnection({
 });
 
 console.log("Initializing Firebase function...");
+
+app.listen(port, () =>{
+  console.log(`App listening on ports ${port}...`);
+});
 
 // -----------------ERROR CATCHING-----------------//
 DB.connect((err) => {
