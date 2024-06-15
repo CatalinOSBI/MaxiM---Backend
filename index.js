@@ -1,5 +1,7 @@
 require('dotenv').config({ path: __dirname + '/.env.local' });
 
+const {onRequest} = require("firebase-functions/v2/https");
+const logger = require("firebase-functions/logger");
 const express = require('express')
 const mysql = require('mysql2')
 const app = express()
