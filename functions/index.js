@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
-// -----------------ESTABLISHING THE CONNECTION-----------------//
+// ----------------ESTABLISHING THE CONNECTION----------------//
 const DB = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -26,7 +26,7 @@ const DB = mysql.createConnection({
   },
 });
 
-console.log("Initializing Firebase function...");
+console.log("Initializing Firebase FunctionService...");
 
 app.listen(port, () =>{
   console.log(`App listening on ports ${port}...`);
