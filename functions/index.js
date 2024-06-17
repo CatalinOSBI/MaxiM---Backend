@@ -64,7 +64,7 @@ app.post("/sneakers", (req, res) => {
     req.body.price,
   ];
   const SQL = "INSERT INTO `defaultdb`.`sneakers` " +
-  "(`type`, `releaseYear`, `name`, `image`, `image_noBG`, `price`) " +
+  "(`type`, `release_year`, `name`, `image`, `image_noBG`, `price`) " +
   "VALUES (?);";
 
   DB.query(SQL, [values], (err, data) => {
